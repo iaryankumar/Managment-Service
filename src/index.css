@@ -1,13 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import 'tailwindcss';
 
 
 .k{
-    background-color:#fafaf9 ;
+    background-color:#fcfcfc ;
 }
 
 @theme{
-    --font-primary:Righteous,serif;
+    --font-primary:Roboto,serif;
     --color-themePrimary:#fcfcfc;
+    --color-sidebar:#fcfcfc;
+    --color-activePrimary:#7C3AED;
+    --color-activeSecondary:#F5F3FF;
     --color-borderPrimary:#fafaf9;
 }
