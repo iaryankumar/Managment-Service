@@ -15,7 +15,7 @@ const MainLayout = () => {
                 {/* this is the fixed portion  */}
 
                 {/* this is the outlet portion */}
-                <div className='min-h-[99.4vh] max-h-max w-[calc(100%-232px)] p-12 '>
+                <div className='min-h-[99.4vh] max-h-max w-[calc(100%-232px)] ps-5 '>
                         <Outlet/>
                 </div>
                 {/* this is the outlet portion */}

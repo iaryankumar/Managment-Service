@@ -3,7 +3,7 @@
 
 
 .k{
-    background-color:#fcfcfc ;
+    background-color:#fffefe ;
 }
 
 @theme{
@@ -13,4 +13,5 @@
     --color-activePrimary:#7C3AED;
     --color-activeSecondary:#F5F3FF;
     --color-borderPrimary:#fafaf9;
+    --color-borderSecondary:#f7f7f3;
 }

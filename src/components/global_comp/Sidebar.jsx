@@ -9,9 +9,9 @@ import { NavLink } from 'react-router-dom'
 const Sidebar = () => {
     return (
         <>
-            <aside className='h-[100vh] w-[220px] flex flex-col py-3 px-0.5'>
-                <header className='h-[60px] w-full flex items-center px-3 font-primary'>
-                    <img src="logo.png" className='h-[35px]' />
+            <aside className='h-[100vh] w-[220px] flex flex-col px-0.5'>
+                <header className='h-[88px] w-full flex items-center px-3 font-primary'>
+                    <img src="/logo.png" className='h-[35px]' />
                 </header>
                 <nav className='w-full h-full flex flex-col items-center gap-1 font-primary'>
 

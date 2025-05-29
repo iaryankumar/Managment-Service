@@ -10,6 +10,8 @@ import Teachers from "./pages/Teachers"
 import Exam from "./pages/Exam"
 import Fees from "./pages/Fees"
 import Message from "./pages/Message"
+import StudentView from "./pages/StudentView"
+import TeacherView from "./pages/TeacherView"
 
 
 function App() {
@@ -25,10 +27,12 @@ function App() {
       ,
       children: [
         { index: true, element: <Home /> },
+        { path:'teacher/:username', element: <TeacherView /> },
         {
           path: 'students',
           children: [
             { index: true, element: <Students /> },
+            { path:':username', element: <StudentView /> },
           ]
         },
         {

@@ -1,0 +1,13 @@
+{/* this is the attendance portion */}
+                    <div className='px-6 py-4'>
+                        <h1 className='text-xl font-semibold'>Attendance Details</h1>
+                        <Calender />
+                    </div>
+                    {/* this is the attendance portion */}
+
+                    {/* this is the attendance portion */}
+                    <div className='px-6 py-4'>
+                        <h1 className='text-xl font-semibold'>Fees Details</h1>
+                        <FeesCard />
+                    </div>
+                    {/* this is the attendance portion */}
