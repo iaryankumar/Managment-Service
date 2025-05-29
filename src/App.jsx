@@ -12,6 +12,7 @@ import Fees from "./pages/Fees"
 import Message from "./pages/Message"
 import StudentView from "./pages/StudentView"
 import TeacherView from "./pages/TeacherView"
+import Others from "./pages/Others"
 
 
 function App() {
@@ -69,6 +70,12 @@ function App() {
           path: 'notice',
           children: [
             { index: true, element: <Message /> },
+          ]
+        },
+        {
+          path: 'others',
+          children: [
+            { index: true, element: <Others /> },
           ]
         },
       ]

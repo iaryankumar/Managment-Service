@@ -1,8 +1,8 @@
 import React from 'react'
-import { FaCalendarCheck, FaThList } from 'react-icons/fa'
+import { FaCalendarCheck } from 'react-icons/fa'
 import { GoHomeFill } from 'react-icons/go'
 import { PiChatCircleTextFill, PiExamFill } from 'react-icons/pi'
-import { RiBookletFill, RiMoneyRupeeCircleFill, RiUser3Fill } from 'react-icons/ri'
+import { RiBookletFill, RiMoneyRupeeCircleFill, RiNotificationBadgeFill, RiUser3Fill } from 'react-icons/ri'
 import { TbLayoutListFilled } from 'react-icons/tb'
 import { NavLink } from 'react-router-dom'
 
@@ -83,6 +83,15 @@ const Sidebar = () => {
                             <div className={`h-[44px] w-full flex items-center px-3 cursor-pointer text-gray-500 text-[13.5px] gap-2 transition-all ease-initial duration-100 ${isActive && ' border-r-6 border-r-activePrimary bg-activeSecondary  font-semibold text-gray-700'}`}>
                                 <PiChatCircleTextFill className='text-[19px]' />
                                 <span>Notice</span>
+                            </div>
+                        )}
+                    </NavLink>
+
+                    <NavLink to={'/others'} className={'w-full'}>
+                        {({ isActive }) => (
+                            <div className={`h-[44px] w-full flex items-center px-3 cursor-pointer text-gray-500 text-[13.5px] gap-2 transition-all ease-initial duration-100 ${isActive && ' border-r-6 border-r-activePrimary bg-activeSecondary  font-semibold text-gray-700'}`}>
+                                <RiNotificationBadgeFill className='text-[18px]' />
+                                <span>Others</span>
                             </div>
                         )}
                     </NavLink>
