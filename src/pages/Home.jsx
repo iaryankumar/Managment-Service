@@ -1,7 +1,8 @@
 import React from 'react'
 import Navbar from '../components/home_comp/Navbar'
 import StatsCard from '../components/home_comp/StatsCard'
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
+import { PiStudentFill } from 'react-icons/pi'
 
 const Home = () => {
   return (
@@ -17,8 +18,20 @@ const Home = () => {
       </div>
       {/* this is the statics portion */}
 
+      {/* this is the add student button */}
+      <div className='h-max w-full mt-4 pe-6'>
+        <div className='h-[60px] w-full border border-borderSecondary rounded-2xl flex items-center justify-between px-4 font-primary text-gray-600'>
+          <div className='flex gap-3'>
+            <PiStudentFill className='text-2xl' />
+          <h1 className='font-semibold'>Add new student</h1>
+          </div>
+          <Link to={'/add/student'} className='bg-activePrimary text-[14px] py-1 px-3 rounded-xl text-white cursor-pointer'>Add student</Link>
+        </div>
+      </div>
+      {/* this is the add student button */}
+
       {/* this is the teacher portion */}
-      <div className='h-max w-full mt-4 mb-5 pe-5'>
+      <div className='h-max w-full mt-3 mb-5 pe-5'>
         <div className='h-full w-full border border-borderPrimary rounded-[8px]'>
           <div className="relative overflow-x-auto  sm:rounded-lg">
             <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
@@ -69,17 +82,6 @@ const Home = () => {
         </div>
       </div>
       {/* this is the teachers portion */}
-
-
-      {/* this is the analytics portion
-      <div className='h-[50vh] w-full mt-4 mb-5 pe-5'>
-        <div className='h-full w-full border border-borderPrimary p-6 rounded-[8px]'>
-           <div className='h-full w-full border-l border-gray-300'>
-            <div></div>
-           </div>
-        </div>
-      </div>
-      this is the analytics portion */}
 
     </>
   )

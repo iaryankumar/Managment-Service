@@ -4,6 +4,7 @@ import { FiSearch } from 'react-icons/fi'
 import { IoIosAddCircle } from 'react-icons/io'
 import { IoNotifications } from 'react-icons/io5'
 import { MdAdd, MdOutlineExpandMore } from 'react-icons/md'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
     return (
@@ -17,9 +18,9 @@ const Navbar = () => {
 
                     <FcOrgUnit title='Statics' className='cursor-pointer text-2xl' />
 
-                    <div title='Add Teacher' className='h-[36px] w-[36px] rounded-full bg-borderPrimary cursor-pointer flex items-center justify-center hover:bg-activePrimary hover:text-gray-50'>
+                    <Link to={'/add/teacher'} title='Add Teacher' className='h-[36px] w-[36px] rounded-full bg-borderPrimary cursor-pointer flex items-center justify-center hover:bg-activePrimary hover:text-gray-50'>
                         <MdAdd />
-                    </div>
+                    </Link>
 
                     <div title='Notifications' className='h-[36px] w-[36px] rounded-full bg-borderPrimary cursor-pointer flex items-center justify-center hover:bg-activePrimary hover:text-gray-50'>
                         <IoNotifications className='text-[16px]' />

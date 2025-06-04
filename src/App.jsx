@@ -13,6 +13,8 @@ import Message from "./pages/Message"
 import StudentView from "./pages/StudentView"
 import TeacherView from "./pages/TeacherView"
 import Others from "./pages/Others"
+import AddTeacher from "./pages/AddTeacher"
+import AddStudent from "./pages/AddStudent"
 
 
 function App() {
@@ -83,6 +85,22 @@ function App() {
     {
       path: '/auth',
       element: <Auth />
+    },
+    {
+      path: '/add/teacher',
+      element: (
+        <ProtectedRoute>
+          <AddTeacher />
+        </ProtectedRoute>
+      )
+    },
+    {
+      path: '/add/student',
+      element: (
+        <ProtectedRoute>
+          <AddStudent />
+        </ProtectedRoute>
+      )
     }
 
   ])
